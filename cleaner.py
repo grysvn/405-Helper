@@ -3,11 +3,11 @@
 import sys
 
 args = sys.argv[1:]
-flag = False #while this is true, we'll print the bytecode
+flag = False # while this is true, we'll print the bytecode
 bytestring = ''
 
 for line in sys.stdin:
-    if flag: # wanted label found, now get all its bytecode
+    if flag: # wanted label found, now get all of its bytecode
         if line == '\n':
             flag = False
             continue
